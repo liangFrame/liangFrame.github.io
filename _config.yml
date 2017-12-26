@@ -1,4 +1,4 @@
-title: Hello, world! I'm David Freeman
+title: 专注于Java Web
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -7,13 +7,13 @@ permalink: ':title/'
 baseurl: ""
 #baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+blog: http://lframe.cn/ #if your site has a twitter account, enter it here
 
 # Author Settings
 author: 梁志宇 # add your name
 author-img: david-freeman.jpg # add your photo
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
-twitter: # add your Twitter handle
+about-author: 我是一名Java Web 工程师，专注于Java 后端. # 用于修改名字下面的描述信息
+#twitter:  # add your Twitter handle
 facebook: # add your Facebook handle
 github: liangFrame # add your Github handle
 linkedin: # add your Linkedin handle

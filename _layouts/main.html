@@ -14,27 +14,32 @@ layout: default
   </header> <!-- End Header -->
   <footer>
     <section class="contact">
-      <h3 class="contact-title">Contact me</h3>
+      <!--
+
+      这里可以用于修改首页以及各个页面的左下角的信息。
+
+      -->
+      <h3 class="contact-title">联系 我</h3>
       <ul>
-        {% if site.twitter %}
-          <li><a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% if site.blog %}
+          <li><a href="{{ site.blog }}" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
         {% else %}
-          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://lframe.cn/" target="_blank"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
         {% endif %}
-        {% if site.facebook %}
-          <li><a href="https://facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        {% endif %}
+        <!--{% if site.facebook %}-->
+          <!--<li><a href="https://facebook.com/{{ site.facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+        <!--{% else %}-->
+          <!--<li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+        <!--{% endif %}-->
         {% if site.github %}
           <li class="github"><a href="http://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i></a></li>
         {% else %}
           <li class="github"><a href="http://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.linkedin %}
-          <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li class="linkedin"><a href="https://www.zhihu.com/people/liang-zhi-yu-42/activities" target="_blank"><i class="fa fa-book"></i></a></li>
         {% else %}
-          <li class="linkedin"><a href="https://in.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="linkedin"><a href="https://www.zhihu.com/people/liang-zhi-yu-42/activities" target="_blank"><i class="fa fa-book" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.email %}
           <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i></a></li>

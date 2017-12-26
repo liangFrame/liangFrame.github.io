@@ -1,26 +1,45 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
+title: "MarkdownPad 2的常用快捷键"
 date: 2017-04-06 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# 以下是使用window系统下的MarkdownPad 2的常用内容  #
+12/26/2017 8:45:49 AM 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+# 以下是使用window系统下的MarkdownPad 2的常用内容  #
 
-Jekyll also offers powerful support for code snippets:
+## 提供插入及时时间戳（通过使用 Ctrl +T） ## 12/24/2017 4:59:53 PM 
+## 加粗字体 使用Ctrl +B  ##
+**这个是加粗后的字体**
+## 斜体 使用ctrl +I  ##
+*这个是斜体*
+## 引用，下面是示例 （快捷键 Ctrl+Q）##
+> 这里是引用的例子
+## 使用快捷键添加标题 （通过使用ctrl +(1-4)来添加1-4级标题）##
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## 超链接的快捷键（ctrl +L） ##
+[http://www.baidu.com](http://www.baidu.com "百度")
+[http://lframe.cn](http://lframe.cn "作者的博客")
+## 添加照片或图像 （Ctrl+ G）##
+![头像](https://i.imgur.com/gMkUxeI.jpg)
+## 无序列表 （Ctrl+U） ##
+- 第一个无序项
+- 第二个无序项
+- 第三个无序项
+## 有序列表 （Ctrl+shift+O）##
+1. 有序列表第一项
+2. 有序列表第二项
+3. 有序列表第三项
+## 水平线(ctrl +R ) ##
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+----------
+## 多级列表。默认列表为一级深度 ，如果需要多级列表，请在第二级列表前为两个空格，三级列表前为五个空格，第四级列表前为九个空格如下所示： ##
+- 所示  
+  -   订单
+     -   杀死
+<p>这个是一段</p>
+<a href="http://lframe.cn">你的博客地址</a>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+# 体尾 #
