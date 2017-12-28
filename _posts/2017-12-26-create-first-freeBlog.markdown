@@ -12,7 +12,7 @@ img:  # Add image post (optional)
 ### 博主会尽量做到简洁明了，清晰到每一步，即使你不懂计算机也毫无关系(*^▽^*) ###
 <br/>
 
-### 版权声明：欢迎分享，转载请注明出处 ###
+### 版权声明：欢迎分享，转载请注明出处[www.lframe.cn](http://www.lframe.cn) ###
 ![Macbook]({{site.baseurl}}/assets/img/biaoqing1.png)
 # **博客目录** #
 
