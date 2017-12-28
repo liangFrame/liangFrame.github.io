@@ -27,6 +27,8 @@ img:  # Add image post (optional)
 * [9.直接fork博主的项目（推荐）](#9)
 * [10.编写博客（以fork博主的项目为例，其他的类似）](#10)
 * [11.推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）](#11)
+* [12.使用git push推送可能遇到的问题](#12)
+* [13.编写markdown文章推荐使用MarkdownPad 2（基于window环境）](#13)
 
 
 
@@ -224,8 +226,27 @@ img:  # Add image post (optional)
 <h2 id="11">推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）</h2>
 打开git Bash，通过`cd {你项目的根目录}`，然后键入`git add .`，（代表把该项目所有改变的内容保存到暂存区内），接着键入`git commit -m "提交信息"`，（代表把该项目保存到本地仓库），最后键入`git push origin master`，推送到远程仓库了。（等几分钟，可能时间更长一点，github Page服务器就会刷新），你再次访问你的博客，内容已经更新了。
 
-<h2>使用git push推送可能遇到的问题</h2>
-<h2 id="9">总结</h2>
+<h2 id="12">使用git push推送可能遇到的问题</h2>
+①你可能会遇到如下图所示的问题：
+![Macbook]({{site.baseurl}}/assets/img/blog.png)<br/>
+你只需要改一下该文件的格式改为UTF-8，如果出现其他编码错误的话，你把文件格式改为相应格式即可。具体如下图所示：
+![Macbook]({{site.baseurl}}/assets/img/blog1.png)<br/>
+
+②每次重启电脑后，使用jekyll本地服务器端口仍然会被占用，你需要关闭该端口的服务，[解决方式](#bug)。<br/>
+③你使用git提交的时候可能会遇到`Your branch and 'origin/master' have diverged, and have 1 and 1 different commits each, respectively`，解决方法：在我的[CSDN博客](http://blog.csdn.net/m0_37884977/article/details/78901668)中查看。<br/>
+> **如果还有其他问题的话，可以发我的邮箱`605415633@qq.com`，**。
+<h2 id="13">编写markdown文章推荐使用MarkdownPad 2（基于window环境）</h2>
+安装了markdownPad 2不能实现实时预览，[解决方法](https://www.zhihu.com/question/34393386)。
+常用快捷键见上篇博客。
+<h3 id="14">总结</h3>
+到此，你已经搭建好你的博客了。<br/>
+你只需要在你本地仓库中中`_post`文件夹中添加你新写的博客即可。<br/>
+然后使用git Bash进入你项目的根目录<br/>
+然后键入`git add .`,把修改的内容提交到暂存区内<br/>
+接着键入`git commit '提示信息'`，把项目提交到本地仓库中。其中提示信息可以修改为你博客做出修改的备注信息。<br>
+最后键入`git push origin master`，推送到了远程仓库github上。<br/>
+这里以博主的项目为例，博主的项目在F盘的github.liangFrame.io文件夹下，如下图所示：<br/>
+
 
 
  
