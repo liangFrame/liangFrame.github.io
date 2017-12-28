@@ -12,7 +12,7 @@ blog: http://lframe.cn/ #if your site has a twitter account, enter it here
 # Author Settings
 author: 梁志宇 # add your name
 author-img: david-freeman.jpg # add your photo
-about-author: 我是一名Java Web 工程师，专注于Java 后端. # 用于修改名字下面的描述信息
+about-author: 我是一名Java Web 工程师。 # 用于修改名字下面的描述信息
 #twitter:  # add your Twitter handle
 facebook: # add your Facebook handle
 github: liangFrame # add your Github handle
