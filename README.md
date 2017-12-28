@@ -1,3 +1,5 @@
+#具体的配置信息我已经在_config.yml用中文注释了，我后续会推出如何修改源码的文章，你也可以自己先改改。
+
 # Flexible-Jekyll is a simple and clean theme for Jekyll
 
 ![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
@@ -30,3 +32,4 @@ Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is importa
 
 GNU General Public License v3.0
 # lian
+
