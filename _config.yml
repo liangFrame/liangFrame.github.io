@@ -7,17 +7,17 @@ permalink: ':title/'
 baseurl: ""
 #baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
 url:  # the base hostname & protocol for your site, e.g. http://example.com
-blog: http://lframe.cn/ #if your site has a twitter account, enter it here
+blog: http://lframe.cn/ #你可以 改为你的博客地址
 
 # Author Settings
-author: 梁志宇 # add your name
-author-img: david-freeman.jpg # add your photo
+author: 梁志宇 # 改为你的名字
+author-img: david-freeman.jpg # 在assets文件夹下的img文件夹下添加一张你的头像，然后把名字写到这里而且必须带扩展名而且最好是英文。
 about-author: 我是一名Java Web 工程师。 # 用于修改名字下面的描述信息
 #twitter:  # add your Twitter handle
 facebook: # add your Facebook handle
-github: liangFrame # add your Github handle
-linkedin: # add your Linkedin handle
-email: 605415633@qq.com # add your Email address
+github: liangFrame # 可以改为你github的用户名，切记是用户名！
+linkedin: # 这个需要在源码上修改，我这里用的我知乎的地址····
+email: 605415633@qq.com # 这里填上你的邮箱
 
 # Disqus
 discus-identifier: mr-brown # add your discus identifier

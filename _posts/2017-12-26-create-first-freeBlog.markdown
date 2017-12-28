@@ -28,7 +28,9 @@ img:  # Add image post (optional)
 * [10.编写博客（以fork博主的项目为例，其他的类似）](#10)
 * [11.推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）](#11)
 * [12.使用git push推送可能遇到的问题](#12)
-* [13.编写markdown文章推荐使用MarkdownPad 2（基于window环境）](#13)
+* [13.修改配置信息](#13)
+* [14.编写markdown文章推荐使用MarkdownPad 2（基于window环境）](#14)
+* [15.总结](#15)
 
 
 
@@ -235,10 +237,12 @@ img:  # Add image post (optional)
 ②每次重启电脑后，使用jekyll本地服务器端口仍然会被占用，你需要关闭该端口的服务，[解决方式](#bug)。<br/>
 ③你使用git提交的时候可能会遇到`Your branch and 'origin/master' have diverged, and have 1 and 1 different commits each, respectively`，解决方法：在我的[CSDN博客](http://blog.csdn.net/m0_37884977/article/details/78901668)中查看。<br/>
 > **如果还有其他问题的话，可以发我的邮箱`605415633@qq.com`，**。
-<h2 id="13">编写markdown文章推荐使用MarkdownPad 2（基于window环境）</h2>
+<h2 id="13">修改配置信息</h2>
+> 你直接在项目的根目录的_config.yml文件中修改即可，博主已经把注释写好了，你修改了之后重启本地服务器，就可以看到效果了。更多的修改需要修改源码，博主后续会添加这一部分内容。
+<h2 id="14">编写markdown文章推荐使用MarkdownPad 2（基于window环境）</h2>
 安装了markdownPad 2不能实现实时预览，[解决方法](https://www.zhihu.com/question/34393386)。
 常用快捷键见上篇博客。
-<h3 id="14">总结</h3>
+<h2 id="15">总结</h2>
 到此，你已经搭建好你的博客了。<br/>
 你只需要在你本地仓库中中`_post`文件夹中添加你新写的博客即可。<br/>
 然后使用git Bash进入你项目的根目录<br/>
@@ -246,6 +250,8 @@ img:  # Add image post (optional)
 接着键入`git commit '提示信息'`，把项目提交到本地仓库中。其中提示信息可以修改为你博客做出修改的备注信息。<br>
 最后键入`git push origin master`，推送到了远程仓库github上。<br/>
 这里以博主的项目为例，博主的项目在F盘的github.liangFrame.io文件夹下，如下图所示：<br/>
+![Macbook]({{site.baseurl}}/assets/img/git1.png)<br/>
+表明你已经推送成功了。
 
 
 
