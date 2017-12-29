@@ -22,15 +22,16 @@ img:  # Add image post (optional)
 * [4.在github中添加私钥](#4)
 * [5.使用github Page搭建博客](#5)
 * [6.挑选模板](#6)
-* [7.在本地写博客，并上传到github上](#7)
-* [8.安装jekyll本地环境(基于window环境)](#8)
-* [9.直接fork博主的项目（推荐）](#9)
-* [10.编写博客（以fork博主的项目为例，其他的类似）](#10)
-* [11.推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）](#11)
-* [12.使用git push推送可能遇到的问题](#12)
-* [13.修改配置信息](#13)
-* [14.编写markdown文章推荐使用MarkdownPad 2（基于window环境）](#14)
-* [15.总结](#15)
+* [7.绑定域名（不想映射自己域名的可以跳过）](#7)
+* [8.在本地写博客，并上传到github上](#8)
+* [9.安装jekyll本地环境(基于window环境)](#9)
+* [10.直接fork博主的项目（推荐）](#10)
+* [11.编写博客（以fork博主的项目为例，其他的类似）](#11)
+* [12.推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）](#12)
+* [13.使用git push推送可能遇到的问题](#13)
+* [14.修改配置信息](#14)
+* [15.编写markdown文章推荐使用MarkdownPad 2（基于window环境）](#15)
+* [16.总结](#16)
 
 
 
@@ -109,15 +110,28 @@ Linux和Mac上的安装参考[git官方文档](https://git-scm.com/book/zh/v1/%E
 最后修改一下仓库的名字。将仓库的名字改为`{你的github的username（就是你登录时使用的username，不是邮箱）}.github.io`，然后点击Rename，如下所示。
 ![](https://i.imgur.com/hbWCS1v.png)<br>
 接下来你就可以用你`{username}.github.io`访问你的网站了。（username解释同上）。
-<h2>绑定域名（不想映射自己域名的可以跳过）</h2>
+
+
+
+
+<h2 id="7">绑定域名（没有购买域名的同学可以跳过这里，github page会送你免费的域名）</h2>
+同学们首先需要注册一个域名，博主是在[阿里云](https://wanwang.aliyun.com/?spm=5176.8142029.388261.248.22449968aea37q)购买的域名，购买域名需要实名认证，拿到自己的域名后，
+点击右上角的`控制台`
+![](https://i.imgur.com/tn1CApM.png)<br/>
+打开最左边的列表中的`域名与网站（万网）并点击其下面的云解析DNS`，然后在右边找到`添加域名`，然后把你购买好的域名添加进去，
+![](https://i.imgur.com/ktGZz85.png)然后点击`解析设置`，点击`添加解析`，设置如下的内容，其中记录值改为`username.github.io`（username是你github的用户名）。
+![](https://i.imgur.com/vAL59PG.png)最后点击启用即可。<br/>
 打开github，在你刚才fork的项目下中找到CNAME文件夹。打开它，
-![](https://i.imgur.com/2KfkLN5.png)
+![](https://i.imgur.com/2KfkLN5.png)<br/>
 编辑它的内容，比如博主申请的域名是lframe.cn，则你只需要把'lframe.cn'添加到该文件中，然后点击下面的Commit changes。
 等一会，你就可以使用你的域名访问你的博客了。
 
 
 
-<h2 id="7">在本地写博客，并上传到github上</h2>
+
+
+
+<h2 id="8">在本地写博客，并上传到github上</h2>
 
 1. 首先我们打开Git Bash，切换到一个磁盘`cd g:`（博主这里切换到g盘，你可以根据自己的情况把相应的字母替换为你的盘符`mkdir blog`(比如你想添加到e盘，就把g改为e)），然后创建一个目录。然后进入该目录。`cd blog`![](https://i.imgur.com/E0vgry7.png)
 2. 然后使用`git init`初始化该目录为一个本地仓库。接着使用'git clone https://github.com/用你的用户名替换不同(即username)/用你的用户名替换即username.github.com.git'。看不懂的使用git clone 后面加上你仓库中点击绿色按钮Clone or download里面的网址。
@@ -139,7 +153,7 @@ Linux和Mac上的安装参考[git官方文档](https://git-scm.com/book/zh/v1/%E
 ## 从上面可以发现，如果想看修改后的状态，每次都需要①git add . ②git commit -m "提示信息" ③git push origin master 这三步才能实现，而且还得等一会github Page，然后才能查看我们修改的效果。如果我们只修改一点点，这样是不是太浪费时间了，下面介绍如何搭建本地服务实施预览我们修改后的效果。 ##
 
 
-<h2 id="8">安装jekyll本地环境(基于window环境)</h2>
+<h2 id="9">安装jekyll本地环境(基于window环境)</h2>
 
 
 
@@ -179,7 +193,7 @@ Linux和Mac上的安装参考[git官方文档](https://git-scm.com/book/zh/v1/%E
 然后键入`y`回车即可。<br/>
 到此，说明你的jekyll环境已安装好了。
 
-<h2 id="9">直接fork博主的项目（推荐）</h2>
+<h2 id="10">直接fork博主的项目（推荐）</h2>
 > **博主会在自述文件中给出修改你博客的具体方式。以及通过修改源代码修改博客中的一些图标，以及显示方式。以及放图片的位置和在博客中引用图片的方式，当然啦，同学们也可以使用 [图床](https://baike.baidu.com/item/%E5%9B%BE%E5%BA%8A/10721348?fr=aladdin) 。** <br/>
 > 同学们也可以在[主题站](http://jekyllthemes.org/)找一些博客主题，但是在本地测试的时候，可能会出现一些版本不兼容等不可控因素，所以，还是建议同学们直接fork博主的项目，避免不必要的麻烦。
 [博主的github项目地址](https://github.com/liangFrame/liangFrame.github.io)
@@ -207,7 +221,7 @@ Linux和Mac上的安装参考[git官方文档](https://git-scm.com/book/zh/v1/%E
 
 
 
-<h2 id="10">编写博客（以fork博主的项目为例，其他的类似）</h2>
+<h2 id="11">编写博客（以fork博主的项目为例，其他的类似）</h2>
 打开你的本地仓库，找到_post文件夹，你需要把你写好的博客放在这个文件夹中，注意文件的类型必须和博主的上面的文件的格式相同，即都是以`.markdown`为后缀的文件，且文件的命名也必须是类似于`2017-12-26-create-first-freeBlog.markdown`，你的文件命名要严格遵循 `年-月-日-名字.markdown` 这样的格式，其中名字可以改为你喜欢的，在博客的内容中必须包含如下内容（你可以仓库的_post文件夹中打开任意一篇博客上面都必须有该信息）**其中，title后面双引号中的内容是你博客的标题（你可以修改），date后面是日期，你可以修改也可以不修改，但格式必须一样。其他最好不要动。**<br/>
 **---
 layout: post
@@ -225,10 +239,10 @@ img:  # Add image post (optional)
 
 
 
-<h2 id="11">推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）</h2>
+<h2 id="12">推送博客到远程仓库上（这样别人就可以通过网址访问你的博客了）</h2>
 打开git Bash，通过`cd {你项目的根目录}`，然后键入`git add .`，（代表把该项目所有改变的内容保存到暂存区内），接着键入`git commit -m "提交信息"`，（代表把该项目保存到本地仓库），最后键入`git push origin master`，推送到远程仓库了。（等几分钟，可能时间更长一点，github Page服务器就会刷新），你再次访问你的博客，内容已经更新了。
 
-<h2 id="12">使用git push推送可能遇到的问题</h2>
+<h2 id="13">使用git push推送可能遇到的问题</h2>
 ①你可能会遇到如下图所示的问题：
 ![Macbook]({{site.baseurl}}/assets/img/blog.png)<br/>
 你只需要改一下该文件的格式改为UTF-8，如果出现其他编码错误的话，你把文件格式改为相应格式即可。具体如下图所示：
@@ -237,12 +251,12 @@ img:  # Add image post (optional)
 ②每次重启电脑后，使用jekyll本地服务器端口仍然会被占用，你需要关闭该端口的服务，[解决方式](#bug)。<br/>
 ③你使用git提交的时候可能会遇到`Your branch and 'origin/master' have diverged, and have 1 and 1 different commits each, respectively`，解决方法：在我的[CSDN博客](http://blog.csdn.net/m0_37884977/article/details/78901668)中查看。<br/>
 > **如果还有其他问题的话，可以发我的邮箱`605415633@qq.com`，**。
-<h2 id="13">修改配置信息</h2>
+<h2 id="14">修改配置信息</h2>
 > 你直接在项目的根目录的_config.yml文件中修改即可，博主已经把注释写好了，你修改了之后重启本地服务器，就可以看到效果了。更多的修改需要修改源码，博主后续会添加这一部分内容。
-<h2 id="14">编写markdown文章推荐使用MarkdownPad 2（基于window环境）</h2>
+<h2 id="15">编写markdown文章推荐使用MarkdownPad 2（基于window环境）</h2>
 安装了markdownPad 2不能实现实时预览，[解决方法](https://www.zhihu.com/question/34393386)。
 常用快捷键见上篇博客。
-<h2 id="15">总结</h2>
+<h2 id="16">总结</h2>
 到此，你已经搭建好你的博客了。<br/>
 你只需要在你本地仓库中中`_post`文件夹中添加你新写的博客即可。<br/>
 然后使用git Bash进入你项目的根目录<br/>
