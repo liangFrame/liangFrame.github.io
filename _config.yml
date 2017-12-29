@@ -12,7 +12,7 @@ blog: http://lframe.cn/ #你可以 改为你的博客地址
 # Author Settings
 author: 梁志宇 # 改为你的名字
 author-img: david-freeman.jpg # 在assets文件夹下的img文件夹下添加一张你的头像，然后把名字写到这里而且必须带扩展名而且最好是英文。
-about-author: 一名在校的大学三年级的计算机学生.擅长Java Web # 用于修改名字下面的描述信息
+about-author: 一名在校的大学三年级的计算机学生. 潜行修炼中.... 目前主要专注于Java Web相关的内容 # 用于修改名字下面的描述信息
 #twitter:  # add your Twitter handle
 facebook: # add your Facebook handle
 github: liangFrame # 可以改为你github的用户名，切记是用户名！

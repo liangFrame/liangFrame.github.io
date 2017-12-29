@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "从零开始创建一个无需服务器和域名的博客（让你只专注于你的文章）"
+title: "从零开始创建一个无需服务器和域名的免费博客"
 date: 2017-12-16 14:29:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
