@@ -132,7 +132,7 @@ Linux和Mac上的安装参考[git官方文档](https://git-scm.com/book/zh/v1/%E
 
 
 <h2 id="8">在本地写博客，并上传到github上</h2>
-
+###  [Git使用详细教程](http://blog.csdn.net/m0_37884977/article/details/78928286) ###
 1. 首先我们打开Git Bash，切换到一个磁盘`cd g:`（博主这里切换到g盘，你可以根据自己的情况把相应的字母替换为你的盘符`mkdir blog`(比如你想添加到e盘，就把g改为e)），然后创建一个目录。然后进入该目录。`cd blog`![](https://i.imgur.com/E0vgry7.png)
 2. 然后使用`git init`初始化该目录为一个本地仓库。接着使用'git clone https://github.com/用你的用户名替换不同(即username)/用你的用户名替换即username.github.com.git'。看不懂的使用git clone 后面加上你仓库中点击绿色按钮Clone or download里面的网址。
 ![](https://i.imgur.com/w1b9Q1Q.png)
